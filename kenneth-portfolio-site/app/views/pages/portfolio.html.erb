@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- <title>Kenneth Teh | My Portfolio</title> -->
+
+  </script>
+</head>
+<body>
+  <% content_for :title, "Portfolio | Kenneth Teh | Full-Stack Web Developer" %>
+  <div class="container-fluid withbottomshadow">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5" >
+      <%= link_to "KT", home_path, class: "navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <%= link_to "Home", home_path, class: "nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title = "Look at some of my past work!">Portfolio<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal" data-toggle="tooltip" data-placement="bottom" title = "Talk to me if you need something!">Contact Me</a>
+            <!-- Button trigger modal -->
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- topheader section -->
+
+  <div class="jumbotron topheader withbottomshadow">
+    <h3>Portfolio</h1>
+      <p class="lead">Here are some examples of my work</p>
+    </div>
+
+    <!-- Actual Portfolio -->
+
+    <div class="inforow">
+      <div class="container">
+
+        <div class="row">
+          <h3>Front End</h3>
+          <br><br>
+        </div>
+
+        <!-- Portfolio item start -->
+
+        <div class="row justify-content-around top-buffer">
+          <div class="card col-12 col-md-5 project-item">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <%= image_tag "hackreactor1.jpg", alt: "First slide", class: "d-block w-100" %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag "hackreactor2.jpg", alt: "First slide", class: "d-block w-100" %>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 project-description">
+            <h4>Hackreactor Clone (Events Page)</h4>
+            <p class="lead">My first <strong>HTML/CSS/JS</strong> Project, cloning the Hackreactor Events Page</p>
+            <p>
+              Did this with just rudimentary knowledge of HTML and CSS, plus a quick experiment on jQuery to produce the dropdown menu.
+            </p>
+            <small>See on <a href="#">GitHub</a></small>
+          </div>
+        </div>
+
+        <!-- Portfolio item end -->
+
+        <!-- Portfolio item start -->
+
+        <div class="row justify-content-around top-buffer">
+          <div class="card col-12 col-md-5 project-item">
+            <div id="carousel-hackfaq" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <%= image_tag "hackfaq.jpg", alt: "First slide", class: "d-block w-100" %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag "hackfaq2.jpg", alt: "Second slide", class: "d-block w-100" %>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel-hackfaq" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-hackfaq" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 project-description">
+            <h4>Hackreactor Clone (FAQ)</h4>
+            <p class="lead">My first <strong>jQuery</strong> Project, cloning the Hackreactor Prep Page's FAQ section</p>
+            <p>
+              First real page with jQuery, experimented with a few new functions to compare the differences.
+              <br><br>
+              <small>See on <a href="#">GitHub</a></small>
+            </p>
+          </div>
+        </div>
+        <!-- Portfolio item end -->
+
+        <!-- Portfolio item start -->
+
+        <div class="row justify-content-around top-buffer">
+          <div class="card col-12 col-md-5 project-item">
+            <div id="carousel-hackmain" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <%= image_tag "hackmain.jpg", alt: "First slide", class: "d-block w-100" %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag "hackmain2.jpg", alt: "Second slide", class: "d-block w-100" %>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel-hackmain" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-hackmain" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 project-description">
+            <h4>Hackreactor Clone (Main Page)</h4>
+            <p class="lead">My first <strong>Bootstrap</strong> Project, cloning the Hackreactor Main Page</p>
+            <p>
+              Discovered Bootstrap using this project. Love the pre-built items, a real time-saver. The first thing I learnt: don't overwrite the default CSS elements!
+              <br><br>
+              <small>See on <a href="#">GitHub</a></small>
+            </p>
+          </div>
+        </div>
+        <!-- Portfolio item end -->
+
+        <!-- Just to break it up -->
+        <div class="row">
+          <br><br>
+        </div>
+
+
+        <div class="row">
+          <h3>Back End</h3>
+          <br><br>
+        </div>
+
+        <!-- Portfolio item start -->
+
+        <div class="row justify-content-around top-buffer">
+          <div class="card col-12 col-md-5 project-item">
+            <div id="carousel-tictac" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <%= image_tag "tictacscreenshot.jpg", alt: "First slide", class: "d-block w-100" %>
+                </div>
+                <div class="carousel-item">
+                  <%= image_tag "tictacscreenshot2.jpg", alt: "Second slide", class: "d-block w-100" %>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carousel-tictac" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel-tictac" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 project-description">
+            <h4>Tic Tac Toe</h4>
+            <p class="lead">My first <strong>Ruby</strong> game! With an "AI".</p>
+            <p>
+              Wrote this after my first few days working with Ruby. The code was not as polished as I'd hoped, but it was exciting to see the game work. The game has two levels: human v. human and human v. computer. This is a random-move computer, though, so I might revisit this to implement a smart AI that cannot be beaten!
+            </p>
+            <small>See on <a href="#">GitHub</a></small>
+          </div>
+        </div>
+
+        <!-- Portfolio item end -->
+
+      </div>
+
+
+
+      <div class="modal fade " id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg contact-modal" role="document">
+
+          <!-- <div class="modal-header"> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <!-- </div> -->
+          <div class="row justify-content-around">
+            <div class="card col-11 col-lg-5 about-me dropshadow">
+              <h2>About Me.</h2>
+              <p class="lead">Full-Stack Web Developer</p>
+              <p>Kenneth Teh is currently a student at Alpha Camp's Full-Stack Web Development bootcamp.
+                <br><br>
+                Before this, he was an Investment Associate at Fast-Track Singapore. Most recently, he spent some time working on a few startup and app ideas: TagToPrint, a social media hashtag printing service; Store of Article, a web content/press release outsourcing site; and Foosh, an app that lets you schedule hangouts with your friends instantly. He graduated from UCLA with a degree in Business Economics. </p>
+              </div>
+              <div class="col-11 col-lg-5 contact-me">
+                <h2>Let's Talk.</h2>
+                <p class="lead">If you have something exciting you are trying to build, do send me an email through the form below:</p>
+
+                <div class="container fluid">
+                  <form>
+
+                    <div class="form-group row">
+                      <label for="firstName" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" placeholder="Your name" id="firstName">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="exampleFormControlTextarea1" class="col-sm-6 col-form-label">Your Message</label>
+                      <textarea class="form-control col-sm-11 form-margins" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary standard-button black-button">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+      </html>
